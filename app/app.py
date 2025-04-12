@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+  """Maneja la ruta principal '/' para mostrar un formulario y procesar operaciones matemáticas."""
     resultado = None
     if request.method == "POST":
         try:
