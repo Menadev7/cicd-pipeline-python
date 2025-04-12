@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    """Descripción modulo"""
     resultado = None
     if request.method == "POST":
         try:
