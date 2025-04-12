@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-  """Este metodo realiza operaciones matematicas"""
     resultado = None
     if request.method == "POST":
         try:
