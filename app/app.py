@@ -6,10 +6,12 @@ from .calculadora import sumar, restar, multiplicar, dividir
 
 app = Flask(__name__)
 
+
 @app.route("/health")
 def health():
     """Test"""
     return "OK", 200
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -40,4 +42,5 @@ def index():
 
 
 if __name__ == "__main__":  # pragma: no cover
-    app.run(debug=False, port=5000, host="0.0.0.0")  # Quita debug=True para producción
+    app.run(debug=False, port=5000, host="0.0.0.0")
+    # Quita debug=True para producción
