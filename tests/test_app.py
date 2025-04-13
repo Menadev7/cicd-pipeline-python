@@ -51,4 +51,4 @@ def test_index_post_invalid_numbers(client):
 def test_healt_check(client):
     response = client.get('/health')
     assert response.status_code == 200
-    assert response.data == b"ok"
+    assert response.data == b"OK"
